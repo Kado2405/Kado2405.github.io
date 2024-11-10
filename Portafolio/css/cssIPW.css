@@ -1,0 +1,300 @@
+/* Estilos Generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', monospace; /* Fuente general */
+}
+body {
+    background-color: #0A0A0A; /* Fondo oscuro */
+    color: #E0E0E0;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.btn-toggle {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: #FF0000;
+    color: #FFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.perfil-header-img {
+    
+    width: 100%; /* Asegura que la imagen ocupe el ancho disponible */
+    max-width: 600px; /* Puedes ajustar el tamaño según lo necesites */
+    margin: 0 auto; /* Centra la imagen */
+    display: block;
+    border-radius: 10px; /* Agrega bordes redondeados si lo deseas */
+}
+
+/* Encabezado */
+.header {
+    background: linear-gradient(45deg, #0A0A0A, #4B0000); /* Rojo oscuro */
+    color: #FFF;
+    padding: 1.5rem 0; /* Tamaño reducido */
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom: 3px solid #8B0000;
+    font-family: 'Old English Text MT', serif; /* Fuente gótica exacta */
+    width: 100%; /* Asegura que la imagen ocupe el ancho disponible */
+    max-width: 600px; /* Puedes ajustar el tamaño según lo necesites */
+    margin: 0 auto; /* Centra la imagen */
+    display: block;
+    border-radius: 10px; /* Agrega bordes redondeados si lo deseas */
+}
+
+.header h1 {
+    font-size: 3rem; /* Tamaño ajustado */
+    font-weight: bold;
+    text-shadow: 2px 2px #8B0000;
+}
+
+.header p {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #CCCCCC;
+    text-shadow: 1px 1px #660000;
+}
+
+/* Perfil */
+.perfil {
+    background-color: #141414;
+    margin: 2rem 0;
+    padding: 2rem;
+    border-radius: 12px;
+    border: 2px solid #FF0000;
+}
+
+.perfil-header h2 {
+    font-size: 2.5rem;
+    color: #FF0000;
+    text-transform: uppercase;
+}
+
+.perfil-header .descripcion {
+    font-size: 1.1rem;
+    font-style: italic;
+    color: #bbb;
+    margin-top: 0.5rem;
+}
+
+/* Contenedor de imagen */
+.foto-container {
+    display: flex;
+    justify-content: center;
+    margin: 1.5rem 0;
+}
+
+.foto-container img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #FF0000;
+}
+
+/* Información del perfil */
+.perfil-info {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    color: #ddd;
+}
+
+/* Proyectos */
+.proyectos {
+    background-color: #2A2A2D;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    border: 1px solid #8B0000;
+}
+
+.proyectos h3 {
+    font-size: 1.8rem;
+    color: #FF0000;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.proyectos ul {
+    list-style-type: none;
+}
+
+.proyectos li {
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+}
+
+.proyectos a {
+    color: #FF1493;
+    text-decoration: none;
+}
+
+.proyectos a:hover {
+    color: #FF66B3;
+    text-decoration: underline;
+}
+
+#habilidades {
+    background-color: #1b1b1b;
+    padding: 50px 0;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+}
+
+#habilidades h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+.habilidades-lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.habilidad-item {
+    background-color: #2c2c2c;
+    border: 1px solid #3e3e3e;
+    border-radius: 10px;
+    width: 45%;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.habilidad-item:hover {
+    transform: translateY(-10px);
+}
+
+.habilidad-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: red; /* Amarillo similar al estilo de los detalles de todo el sitio */
+}
+
+.habilidad-item .descripcion {
+    font-size: 1em;
+    line-height: 1.5;
+    color: #b0b0b0; /* Gris claro para las descripciones */
+}
+
+@media (max-width: 768px) {
+    .habilidad-item {
+        width: 100%;
+    }
+}
+#contacto {
+    background-color: #111;
+    padding: 50px 0;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    color: #fff;
+}
+
+#contacto h2 {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #ff4d4d; /* Rojo brillante */
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 0 4px 10px rgba(255, 77, 77, 0.5); /* Efecto brillante */
+}
+
+form {
+    background-color: #222;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.7);
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.campo label {
+    font-size: 1.2em;
+    color: red; /* Amarillo para los labels */
+}
+
+.campo input, .campo textarea {
+    padding: 12px;
+    font-size: 1em;
+    border-radius: 8px;
+    border: 2px solid #555;
+    background-color: #333;
+    color: #fff;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.campo input:focus, .campo textarea:focus {
+    border-color: #ff4d4d; /* Rojo para el enfoque */
+}
+
+.campo textarea {
+    height: 150px;
+    resize: none;
+}
+
+.btn-submit {
+    padding: 15px;
+    font-size: 1.2em;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #f2b700; /* Amarillo cuando se pasa el ratón */
+    transform: translateY(-5px);
+}
+
+.btn-submit:active {
+    background-color: #e63946; /* Rojo más oscuro al hacer clic */
+}
+
+@media (max-width: 768px) {
+    #contacto h2 {
+        font-size: 2.5em;
+    }
+
+    form {
+        width: 90%;
+    }
+}
+/* Estilos del Footer */
+.footer {
+    background-color: #0D0D0D; /* Fondo oscuro */
+    color: #FFFFFF; /* Texto blanco */
+    font-family: 'Helvetica Neue', Arial, sans-serif; /* Tipografía moderna */
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.footer p {
+    margin: 5px 0;
+    font-weight: bold;
+    opacity: 0.8;
+}
